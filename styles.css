@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 20px solid #dd3744;
+}
+
+.items {
+  outline: none;
+}
+
+.view-grid .items {
+  outline: 1px solid black;
+}
+
+.title,
+.functions {
+  background-color: #dd3744;
+  color: #ffe3e3;
+  text-align: center;
+  font-size: 1rem;
+  outline: 20px solid #dd3744;
+}
+.title {
+  width: 500px;
+  font-family: "Pixelify Sans", sans-serif;
+  outline: 20px solid #dd3744;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.functions {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #dd3744;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #dd3744;
+  border: 1px solid #ffe3e3;
+  color: #ffe3e3;
+}
