@@ -18,6 +18,8 @@ let isGrid = false;
 colorPicker.addEventListener("input", (event) => {
   currentColor = event.target.value;
   isRainbowSelected = false;
+  rainbowBtn.classList.remove("selected");
+  rainbowBtn.textContent = "Toggle Rainbow";
 });
 
 rainbowBtn.addEventListener("click", () => {
