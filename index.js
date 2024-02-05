@@ -28,6 +28,11 @@ showGrid.addEventListener("click", () => {
   containerDiv.classList.toggle("view-grid");
 });
 
+gridSize.addEventListener("input", (event) => {
+  gridNum = event.target.value;
+  getDivItems();
+});
+
 colorPicker.addEventListener("input", (event) => {
   currentColor = event.target.value;
   isRainbowSelected = false;
