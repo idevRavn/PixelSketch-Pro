@@ -1,7 +1,7 @@
 # PixelSketch Pro
 
 PixelSketch Pro is a web-based pixel art drawing application that allows users to unleash their creativity by creating pixelated artworks. With a user-friendly interface and a range of features, it's the perfect tool for pixel art enthusiasts and digital artists.
-[![PixelSketch Pro](./images/preview.png)
+![PixelSketch Pro](./images/preview.png)
 
 ## Live Website
 
