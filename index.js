@@ -64,6 +64,14 @@ eraserBtn.addEventListener("click", () => {
   }
 });
 
+resetBtn.addEventListener("click", () => {
+  const answer = prompt("Are you sure?", "Yes or No").toLowerCase();
+
+  if (answer === "yes") {
+    getDivItems();
+  }
+});
+
 function colorDiv(e) {
   if (e.type === "mousedown" && !isEraserSelected) {
     isDrawing = true;
