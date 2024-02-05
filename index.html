@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixelSketch Pro</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="title">
+      <h1>PixelSketch Pro</h1>
+      <div class="adjust-btn">
+        <div>
+          <button id="show-grid">Toggle Grid</button>
+        </div>
+        <div class="slider">
+          <input type="range" id="grid-size" max="60" min="16" value="16" />
+          <label for="grid-size" class="message">16</label>
+        </div>
+      </div>
+    </div>
+    <div class="container"></div>
+    <div class="functions">
+      <div class="color-picker">
+        <input type="color" id="color-picker" />
+      </div>
+      <button id="rainbow">Toggle Rainbow</button>
+      <button id="eraser">Toggle Eraser</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
