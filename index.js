@@ -15,6 +15,19 @@ const sizeOfPad = 500;
 let isDrawing = false;
 let isGrid = false;
 
+showGrid.addEventListener("click", () => {
+  isGrid = !isGrid;
+
+  if (isGrid) {
+    showGrid.classList.add("selected");
+    showGrid.textContent = "Toggled Grid";
+  } else {
+    showGrid.classList.remove("selected");
+    showGrid.textContent = "Toggle Grid";
+  }
+  containerDiv.classList.toggle("view-grid");
+});
+
 colorPicker.addEventListener("input", (event) => {
   currentColor = event.target.value;
   isRainbowSelected = false;
