@@ -52,16 +52,33 @@ rainbowBtn.addEventListener("click", () => {
   }
 });
 
+eraserBtn.addEventListener("click", () => {
+  isEraserSelected = !isEraserSelected;
+
+  if (isEraserSelected) {
+    eraserBtn.classList.add("selected");
+    eraserBtn.textContent = "Toggled Eraser";
+  } else {
+    eraserBtn.classList.remove("selected");
+    eraserBtn.textContent = "Toggle Eraser";
+  }
+});
+
 function colorDiv(e) {
-  if (e.type === "mousedown") {
+  if (e.type === "mousedown" && !isEraserSelected) {
     isDrawing = true;
     e.target.style.backgroundColor = isRainbowSelected
       ? getRandomColor()
       : currentColor;
-  } else if (e.type === "mouseover" && isDrawing) {
+  } else if (e.type === "mouseover" && isDrawing && !isEraserSelected) {
     e.target.style.backgroundColor = isRainbowSelected
       ? getRandomColor()
       : currentColor;
+  } else if (e.type === "mousedown" && isEraserSelected) {
+    isDrawing = true;
+    e.target.style.backgroundColor = "#FFF";
+  } else if (e.type === "mouseover" && isDrawing && isEraserSelected) {
+    e.target.style.backgroundColor = "#FFF";
   } else isDrawing = false;
 }
 
