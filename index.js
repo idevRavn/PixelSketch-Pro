@@ -15,6 +15,11 @@ const sizeOfPad = 500;
 let isDrawing = false;
 let isGrid = false;
 
+colorPicker.addEventListener("input", (event) => {
+  currentColor = event.target.value;
+  isRainbowSelected = false;
+});
+
 rainbowBtn.addEventListener("click", () => {
   isRainbowSelected = !isRainbowSelected;
 
